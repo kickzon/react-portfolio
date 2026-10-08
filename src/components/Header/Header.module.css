@@ -1,4 +1,9 @@
 .header {
+  width: 100%;
+  background-color: var(--color-primary);
+}
+
+.headerContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,8 +18,8 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  color: var(--color-text-light);
-  background-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-accent);
   font-size: 1.125rem;
   font-weight: 700;
   text-decoration: none;
@@ -29,25 +34,25 @@
 }
 
 .navList a {
-  color: var(--color-primary);
+  color: var(--color-text-light);
   font-weight: 600;
   text-decoration: none;
   text-underline-offset: 0.4rem;
 }
 
 .navList a:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-accent);
   text-decoration: underline;
 }
 
 .navList a:focus-visible,
 .logo:focus-visible {
-  outline: 0.1875rem solid var(--color-primary-dark);
+  outline: 0.1875rem solid var(--color-accent);
   outline-offset: 0.25rem;
 }
 
 @media (max-width: 31.25rem) {
-  .header {
+  .headerContent {
     align-items: flex-start;
     padding-block: 1rem;
   }
