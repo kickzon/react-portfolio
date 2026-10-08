@@ -10,6 +10,7 @@
   width: min(100% - 2rem, 75rem);
   min-height: 5rem;
   margin-inline: auto;
+  position: relative;
 }
 
 .logo {
@@ -51,15 +52,55 @@
   outline-offset: 0.25rem;
 }
 
+.menuButton {
+  display: none;
+  padding: 0.5rem;
+  border: 0;
+  color: var(--color-text-light);
+  background: transparent;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.menuButton:focus-visible {
+  outline: 0.1875rem solid var(--color-accent);
+  outline-offset: 0.25rem;
+}
+
 @media (max-width: 31.25rem) {
   .headerContent {
-    align-items: flex-start;
-    padding-block: 1rem;
+    min-height: 4.5rem;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .navigation {
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    right: 0;
+    display: none;
+    width: min(18rem, 100%);
+    padding: 1.5rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: var(--color-primary);
+    box-shadow: 0 0.75rem 1.5rem rgb(0 0 0 / 20%);
+  }
+
+  .navigationOpen {
+    display: block;
   }
 
   .navList {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 0.75rem 1.25rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .navList a {
+    display: block;
+    padding-block: 0.5rem;
   }
 }
