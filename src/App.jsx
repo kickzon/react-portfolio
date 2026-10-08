@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './components/Header/Header'
+import Hero from './components/Hero/Hero'
 
 function App() {
   return (
@@ -7,10 +8,7 @@ function App() {
       <Header />
 
       <main>
-        <section id="home">
-          <h1>Chiara Jukkola</h1>
-          <p>Min portfolio kommer snart.</p>
-        </section>
+        <Hero />
 
         <section id="about" aria-label="Om mig" />
         <section id="projects" aria-label="Projekt" />

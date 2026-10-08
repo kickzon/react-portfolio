@@ -1,0 +1,92 @@
+.hero {
+  display: flex;
+  align-items: flex-start;
+  min-height: calc(100svh - 5rem);
+  padding-block: clamp(3rem, 7vw, 6rem);
+}
+
+.content {
+  max-width: 42rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--color-primary-dark);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.role {
+  margin: 1.5rem 0 0;
+  color: var(--color-primary-dark);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-weight: 700;
+}
+
+.introduction {
+  max-width: 36rem;
+  margin: 1.25rem 0 0;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding-inline: 1.5rem;
+  border: 0.125rem solid var(--color-primary);
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.primaryButton {
+  color: var(--color-text-light);
+  background-color: var(--color-primary);
+}
+
+.secondaryButton {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+  transform: translateY(-0.125rem);
+}
+
+.primaryButton:focus-visible,
+.secondaryButton:focus-visible {
+  outline: 0.1875rem solid var(--color-primary-dark);
+  outline-offset: 0.25rem;
+}
+
+@media (max-width: 31.25rem) {
+  .actions {
+    flex-direction: column;
+  }
+}
