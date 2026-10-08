@@ -1,0 +1,9 @@
+main {
+  width: min(100% - 2rem, 75rem);
+  margin-inline: auto;
+  padding-block: 4rem;
+}
+
+h1 {
+  color: var(--color-primary);
+}
