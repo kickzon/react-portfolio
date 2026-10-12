@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 
 function Header() {
@@ -11,9 +12,9 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-        <a className={styles.logo} href="#home" aria-label="Till startsidan">
+        <NavLink className={styles.logo} to="/" aria-label="Till startsidan">
           CJ
-        </a>
+        </NavLink>
 
         <button
           className={styles.menuButton}
@@ -35,24 +36,52 @@ function Header() {
         >
           <ul className={styles.navList}>
             <li>
-              <a href="#home" onClick={closeMenu}>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) =>
+                  isActive ? styles.activeLink : undefined
+                }
+                onClick={closeMenu}
+              >
                 Hem
-              </a>
+              </NavLink>
             </li>
+
             <li>
-              <a href="#about" onClick={closeMenu}>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? styles.activeLink : undefined
+                }
+                onClick={closeMenu}
+              >
                 Om mig
-              </a>
+              </NavLink>
             </li>
+
             <li>
-              <a href="#projects" onClick={closeMenu}>
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  isActive ? styles.activeLink : undefined
+                }
+                onClick={closeMenu}
+              >
                 Projekt
-              </a>
+              </NavLink>
             </li>
+
             <li>
-              <a href="#contact" onClick={closeMenu}>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? styles.activeLink : undefined
+                }
+                onClick={closeMenu}
+              >
                 Kontakt
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>

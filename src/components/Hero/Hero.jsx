@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import styles from "./Hero.module.css";
 
 function Hero() {
   return (
-    <section className={styles.hero} id="home">
+    <section className={styles.hero}>
       <div className={styles.content}>
         <p className={styles.eyebrow}>Hej, jag heter</p>
 
@@ -16,13 +17,13 @@ function Hero() {
         </p>
 
         <div className={styles.actions}>
-          <a className={styles.primaryButton} href="#projects">
+          <Link className={styles.primaryButton} to="/projects">
             Se mina projekt
-          </a>
+          </Link>
 
-          <a className={styles.secondaryButton} href="#contact">
+          <Link className={styles.secondaryButton} to="/contact">
             Kontakta mig
-          </a>
+          </Link>
         </div>
       </div>
     </section>

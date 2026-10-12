@@ -1,6 +1,10 @@
-import './App.css'
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header/Header";
+import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
+import ContactPage from "./pages/ContactPage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
@@ -8,14 +12,15 @@ function App() {
       <Header />
 
       <main>
-        <Hero />
-
-        <section id="about" aria-label="Om mig" />
-        <section id="projects" aria-label="Projekt" />
-        <section id="contact" aria-label="Kontakt" />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
