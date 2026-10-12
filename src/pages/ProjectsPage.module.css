@@ -1,0 +1,47 @@
+.projects {
+  padding-block: clamp(4rem, 10vw, 8rem);
+}
+
+.pageHeader {
+  max-width: 44rem;
+  margin-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--color-primary-dark);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.introduction {
+  margin: 1.25rem 0 0;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 70rem) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
