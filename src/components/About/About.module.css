@@ -1,0 +1,71 @@
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  padding-block: clamp(4rem, 10vw, 8rem);
+}
+
+.heading {
+  align-self: start;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--color-primary-dark);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.content {
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 1.5rem;
+  background-color: var(--color-surface);
+}
+
+.content p {
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.content p + p {
+  margin-top: 1.25rem;
+}
+
+.skillsTitle {
+  margin: 2rem 0 1rem;
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills li {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+  font-weight: 700;
+}
+
+@media (max-width: 48rem) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
