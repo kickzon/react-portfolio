@@ -1,0 +1,85 @@
+.form {
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 1.5rem;
+  background-color: var(--color-surface);
+}
+
+.field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.field label {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 0.125rem solid var(--color-accent-muted);
+  border-radius: 0.75rem;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font: inherit;
+}
+
+.field textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--color-primary);
+  outline: 0.1875rem solid transparent;
+}
+
+.field input[aria-invalid='true'],
+.field select[aria-invalid='true'],
+.field textarea[aria-invalid='true'] {
+  border-color: #9b2c2c;
+}
+
+.errorMessage {
+  margin: 0;
+  color: #8b1e1e;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.successMessage {
+  margin: 0;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  color: var(--color-primary-dark);
+  background-color: var(--color-accent);
+  font-weight: 700;
+}
+
+.submitButton {
+  min-height: 3.25rem;
+  padding-inline: 1.5rem;
+  border: 0;
+  border-radius: 999px;
+  color: var(--color-text-light);
+  background-color: var(--color-primary);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+}
+
+.submitButton:focus-visible {
+  outline: 0.1875rem solid var(--color-primary-dark);
+  outline-offset: 0.25rem;
+}
