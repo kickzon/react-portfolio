@@ -10,30 +10,30 @@ const projects = [
     liveUrl: '',
   },
   {
-  id: 'bokmarkt',
-  title: 'Bokmärkt',
-  description:
-    'En fullstack-applikation för att upptäcka böcker, dela recensioner och administrera användare och innehåll.',
-  technologies: [
-    'TypeScript',
-    'JavaScript',
-    'Express',
-    'MongoDB',
-    'Mongoose',
-  ],
-  image: '/images/projects/bokmarkt-logo.png',
-  githubUrl: 'https://github.com/kickzon/api-assignment-2',
-  liveUrl: 'https://api-assignment-2-three.vercel.app/',
-},
-  {
-    id: 3,
-    title: 'Uppgiftsplaneraren',
+    id: 'bokmarkt',
+    title: 'Bokmärkt',
     description:
-      'Ett verktyg för att skapa, organisera och markera uppgifter som klara.',
-    technologies: ['React', 'JavaScript', 'CSS'],
-    image: '/images/projects/uppgiftsplaneraren.jpg',
-    githubUrl: '',
-    liveUrl: '',
+      'En fullstack-applikation för att upptäcka böcker, dela recensioner och administrera användare och innehåll.',
+    technologies: [
+      'TypeScript',
+      'JavaScript',
+      'Express',
+      'MongoDB',
+      'Mongoose',
+    ],
+    image: '/images/projects/bokmarkt-logo.png',
+    githubUrl: 'https://github.com/kickzon/api-assignment-2',
+    liveUrl: 'https://api-assignment-2-three.vercel.app/',
+  },
+  {
+    id: 'inte-pank',
+    title: 'Inte Pank',
+    description:
+      'En responsiv budgetapp där användaren kan registrera inkomster och utgifter, följa sitt saldo och sätta sparmål.',
+    technologies: ['TypeScript', 'HTML', 'CSS', 'Vite'],
+    image: '/images/projects/inte-pank.png',
+    githubUrl: 'https://github.com/kickzon/inte-pank',
+    liveUrl: 'https://inte-pank.vercel.app/',
   },
   {
     id: 4,
