@@ -20,6 +20,7 @@ const projects = [
       'Express',
       'MongoDB',
       'Mongoose',
+      'CSS',
     ],
     image: '/images/projects/bokmarkt-logo.png',
     githubUrl: 'https://github.com/kickzon/api-assignment-2',
