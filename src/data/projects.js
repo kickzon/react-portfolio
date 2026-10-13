@@ -5,27 +5,33 @@ const projects = [
     description:
       'En responsiv portfolio byggd med React, komponenter och modern CSS.',
     technologies: ['React', 'JavaScript', 'CSS'],
-    image: '',
+    image: '/images/projects/react-portfolio.jpg',
     githubUrl: '',
     liveUrl: '',
   },
   {
-    id: 2,
-    title: 'Filmappen',
-    description:
-      'En applikation där användaren kan söka efter och utforska filmer.',
-    technologies: ['JavaScript', 'API', 'CSS'],
-    image: '',
-    githubUrl: '',
-    liveUrl: '',
-  },
+  id: 'bokmarkt',
+  title: 'Bokmärkt',
+  description:
+    'En fullstack-applikation för att upptäcka böcker, dela recensioner och administrera användare och innehåll.',
+  technologies: [
+    'TypeScript',
+    'JavaScript',
+    'Express',
+    'MongoDB',
+    'Mongoose',
+  ],
+  image: '/images/projects/bokmarkt-logo.png',
+  githubUrl: 'https://github.com/kickzon/api-assignment-2',
+  liveUrl: 'https://api-assignment-2-three.vercel.app/',
+},
   {
     id: 3,
     title: 'Uppgiftsplaneraren',
     description:
       'Ett verktyg för att skapa, organisera och markera uppgifter som klara.',
     technologies: ['React', 'JavaScript', 'CSS'],
-    image: '',
+    image: '/images/projects/uppgiftsplaneraren.jpg',
     githubUrl: '',
     liveUrl: '',
   },
@@ -35,7 +41,7 @@ const projects = [
     description:
       'En väderapplikation som visar aktuell väderinformation från ett API.',
     technologies: ['JavaScript', 'API', 'HTML', 'CSS'],
-    image: '',
+    image: '/images/projects/vaderappen.jpg',
     githubUrl: '',
     liveUrl: '',
   },
@@ -45,7 +51,7 @@ const projects = [
     description:
       'En responsiv webbapp där användaren kan söka efter recept och ingredienser.',
     technologies: ['React', 'API', 'CSS'],
-    image: '',
+    image: '/images/projects/receptsokaren.jpg',
     githubUrl: '',
     liveUrl: '',
   },
@@ -55,7 +61,7 @@ const projects = [
     description:
       'En tillgänglig och responsiv webbplats för ett fiktivt lokalt café.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '',
+    image: '/images/projects/cafewebbplats.jpg',
     githubUrl: '',
     liveUrl: '',
   },
