@@ -1,4 +1,5 @@
 main {
   width: min(100% - 2rem, 75rem);
   margin-inline: auto;
+  flex: 1;
 }
