@@ -110,6 +110,6 @@ Om jag gjorde om projektet skulle jag börja med en mer detaljerad Figma-skiss o
 
 ## AI-användning
 
-AI har använts som stöd under projektet för handledning, felsökning och förklaringar av React, state och komponentstruktur. AI-genererade bilder har också använts som tillfälliga illustrationer för de fiktiva projekten.
+OpenAI Codex har använts som stöd under projektet för handledning, felsökning och förklaringar av React, state och komponentstruktur. OpenAI:s bildgenereringsverktyg har använts för att skapa tillfälliga illustrationer till de fiktiva projekten.
 
 Förslagen har granskats, testats och anpassats innan de lagts in i projektet. AI har fungerat som ett stöd i lärandet och besluten, medan implementationen har skrivits och testats stegvis av mig.
