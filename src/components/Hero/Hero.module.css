@@ -1,7 +1,6 @@
 .hero {
   display: flex;
   align-items: flex-start;
-  min-height: calc(100svh - 5rem);
   padding-block: clamp(3rem, 7vw, 6rem);
 }
 
