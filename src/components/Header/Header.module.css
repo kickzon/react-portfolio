@@ -28,27 +28,44 @@
 
 .navList {
   display: flex;
-  gap: clamp(1rem, 3vw, 2.5rem);
+  gap: clamp(0.25rem, 1vw, 0.75rem);
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .navList a {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  overflow: hidden;
+  padding: 0.5rem 0.875rem;
+  border-radius: 999px;
   color: var(--color-text-light);
   font-weight: 600;
   text-decoration: none;
-  text-underline-offset: 0.4rem;
+  transition: color 250ms ease;
 }
 
-.navList a:hover {
-  color: var(--color-accent);
-  text-decoration: underline;
+.navList a::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--color-accent);
+  content: "";
+  transform: translateX(-105%);
+  transition: transform 250ms ease;
 }
 
+.navList a:hover,
 .navList a.activeLink {
-  color: var(--color-accent);
-  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+.navList a:hover::before,
+.navList a.activeLink::before {
+  transform: translateX(0);
 }
 
 .navList a:focus-visible,
@@ -70,6 +87,13 @@
 .menuButton:focus-visible {
   outline: 0.1875rem solid var(--color-accent);
   outline-offset: 0.25rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navList a,
+  .navList a::before {
+    transition: none;
+  }
 }
 
 @media (max-width: 31.25rem) {
@@ -101,7 +125,7 @@
   .navList {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .navList a {
