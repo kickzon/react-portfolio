@@ -61,7 +61,7 @@ Du behöver ha [Node.js](https://nodejs.org/) installerat.
 ## Länkar
 
 - [GitHub-repo](https://github.com/kickzon/react-portfolio)
-- [Live-version](LÄGG-IN-VERCEL-LÄNK-HÄR)
+- [Live-version](https://react-portfolio-drab-mu.vercel.app/)
 - [Figma-skiss](LÄGG-IN-FIGMA-LÄNK-HÄR)
 
 ## Komponentarkitektur
