@@ -1,13 +1,19 @@
 const projects = [
   {
-    id: 1,
-    title: 'React Portfolio',
+    id: "react-portfolio",
+    title: "React Portfolio",
     description:
-      'En responsiv portfolio byggd med React, komponenter och modern CSS.',
-    technologies: ['React', 'JavaScript', 'CSS'],
-    image: '/images/projects/react-portfolio.jpg',
-    githubUrl: '',
-    liveUrl: '',
+      "En responsiv portfolio byggd med React och React Router för att presentera mina projekt och kunskaper. Sidan innehåller multifiltrering av projekt, ett validerat kontaktformulär, responsiv navigation och tillgänglighetsanpassade animationer.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "React Router",
+      "CSS Modules",
+      "Vite",
+    ],
+    image: "/images/projects/react-portfolio.png",
+    githubUrl: "https://github.com/kickzon/react-portfolio",
+    liveUrl: "https://react-portfolio-drab-mu.vercel.app/",
   },
   {
     id: 'bokmarkt',
