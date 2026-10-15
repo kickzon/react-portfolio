@@ -62,7 +62,7 @@ Du behöver ha [Node.js](https://nodejs.org/) installerat.
 
 - [GitHub-repo](https://github.com/kickzon/react-portfolio)
 - [Live-version](https://react-portfolio-drab-mu.vercel.app/)
-- [Figma-skiss](LÄGG-IN-FIGMA-LÄNK-HÄR)
+- [Figma-skiss](https://www.figma.com/design/qS0Vmoh9ob1Q5FCI0ySMNA/Chiara-Portfolio?node-id=0-1&t=iUkuFUtx3UQcian6-1)
 
 ## Komponentarkitektur
 
