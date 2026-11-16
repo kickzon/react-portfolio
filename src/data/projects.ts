@@ -13,10 +13,10 @@ const projects: Project[] = [
     id: "react-portfolio",
     title: "React Portfolio",
     description:
-      "En responsiv portfolio byggd med React och React Router för att presentera mina projekt och kunskaper. Sidan innehåller multifiltrering av projekt, ett validerat kontaktformulär, responsiv navigation och tillgänglighetsanpassade animationer.",
+      "En responsiv portfolio byggd med React och TypeScript. Portfolion presenterar mig, mina kunskaper och ett urval av projekt. Besökaren kan navigera mellan flera sidor, filtrera projekt efter teknik och använda ett validerat kontaktformulär.",
     technologies: [
       "React",
-      "JavaScript",
+      "TypeScript",
       "React Router",
       "CSS Modules",
       "Vite",

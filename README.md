@@ -1,6 +1,6 @@
 # React Portfolio
 
-En responsiv portfolio byggd med React. Portfolion presenterar mig, mina kunskaper och ett urval av projekt. Besökaren kan navigera mellan flera sidor, filtrera projekt efter teknik och använda ett validerat kontaktformulär.
+En responsiv portfolio byggd med React och TypeScript. Portfolion presenterar mig, mina kunskaper och ett urval av projekt. Besökaren kan navigera mellan flera sidor, filtrera projekt efter teknik och använda ett validerat kontaktformulär.
 
 ## Funktioner
 
@@ -15,7 +15,7 @@ En responsiv portfolio byggd med React. Portfolion presenterar mig, mina kunskap
 ## Tekniker och verktyg
 
 - React
-- JavaScript
+- TypeScript
 - React Router
 - React Icons
 - CSS Modules
@@ -58,6 +58,26 @@ Du behöver ha [Node.js](https://nodejs.org/) installerat.
 
 5. Öppna adressen som visas i terminalen, vanligtvis `http://localhost:5173`.
 
+## Kvalitetskontroller
+
+Kontrollera TypeScript-typer:
+
+```bash
+npm run typecheck
+```
+
+Kör lint:
+
+```bash
+npm run lint
+```
+
+Skapa ett produktionsbygge:
+
+```bash
+npm run build
+```
+
 ## Länkar
 
 - [GitHub-repo](https://github.com/kickzon/react-portfolio)
@@ -83,7 +103,7 @@ flowchart TD
     AboutPage --> About
     ProjectsPage --> ProjectFilter
     ProjectsPage --> ProjectCard
-    ProjectsPage --> ProjectData[projects.js]
+    ProjectsPage --> ProjectData[projects.ts]
     ContactPage --> ContactForm
 ```
 
@@ -97,6 +117,9 @@ State ligger nära de komponenter som använder informationen:
 
 Projektfiltret använder en array eftersom flera tekniker kan vara valda samtidigt. Ett projekt visas endast om det innehåller alla valda tekniker. Formulärets fält ligger i ett gemensamt objekt eftersom de hör ihop och kan uppdateras med samma ändringsfunktion.
 
+## TypeScript
+
+Projektet byggdes ursprungligen med JavaScript och har därefter migrerats till TypeScript. Projektdata följer ett gemensamt `Project`-interface och komponenternas props är typade. Projektfiltret använder typat state och kontaktformuläret har typer för formulärdata, valideringsfel och React-events. TypeScript körs i strict mode och hela applikationen kontrolleras med `npm run typecheck`.
 
 ## Reflektion
 

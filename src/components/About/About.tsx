@@ -23,7 +23,7 @@ function About() {
         </p>
 
         <p>
-          Just nu utvecklar jag mina kunskaper inom React, JavaScript och
+          Just nu utvecklar jag mina kunskaper inom React, TypeScript och
           responsiv webbdesign. Mitt mål är att skapa genomtänkta digitala
           upplevelser där design och funktion arbetar tillsammans.
         </p>
