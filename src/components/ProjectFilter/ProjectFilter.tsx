@@ -1,11 +1,18 @@
 import styles from "./ProjectFilter.module.css";
 
+interface ProjectFilterProps {
+  technologies: string[];
+  selectedTechnologies: string[];
+  onToggle: (technology: string) => void;
+  onReset: () => void;
+}
+
 function ProjectFilter({
   technologies,
   selectedTechnologies,
   onToggle,
   onReset,
-}) {
+}: ProjectFilterProps) {
   return (
     <section className={styles.filter} aria-labelledby="filter-heading">
       <h2 className={styles.title} id="filter-heading">
