@@ -1,6 +1,11 @@
 import styles from './ProjectCard.module.css'
+import type { Project } from '../../data/projects'
 
-function ProjectCard({ project }) {
+interface ProjectCardProps {
+  project: Project
+}
+
+function ProjectCard({ project }: ProjectCardProps) {
   const {
     title,
     description,
