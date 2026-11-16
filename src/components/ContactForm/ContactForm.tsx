@@ -1,7 +1,18 @@
 import { useState } from "react";
+import type { ChangeEvent, FormEvent } from "react";
 import styles from "./ContactForm.module.css";
 
-const initialFormData = {
+interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+}
+
+type FormErrors = Partial<Record<keyof ContactFormData, string>>;
+
+const initialFormData: ContactFormData = {
   name: "",
   email: "",
   phone: "",
@@ -9,8 +20,8 @@ const initialFormData = {
   message: "",
 };
 
-function validateForm(formData) {
-  const validationErrors = {};
+function validateForm(formData: ContactFormData): FormErrors {
+  const validationErrors: FormErrors = {};
 
   if (!formData.name.trim()) {
     validationErrors.name = "Du behöver ange ditt namn.";
@@ -42,27 +53,33 @@ function validateForm(formData) {
 }
 
 function ContactForm() {
-  const [formData, setFormData] = useState(initialFormData);
-  const [errors, setErrors] = useState({});
+  const [formData, setFormData] =
+    useState<ContactFormData>(initialFormData);
+  const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  function handleChange(event) {
-    const { name, value } = event.target;
+  function handleChange(
+    event: ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >,
+  ) {
+    const fieldName = event.target.name as keyof ContactFormData;
+    const { value } = event.target;
 
     setFormData((currentFormData) => ({
       ...currentFormData,
-      [name]: value,
+      [fieldName]: value,
     }));
 
     setErrors((currentErrors) => ({
       ...currentErrors,
-      [name]: "",
+      [fieldName]: "",
     }));
 
     setIsSubmitted(false);
   }
 
-  function handleSubmit(event) {
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const validationErrors = validateForm(formData);
@@ -170,7 +187,7 @@ function ContactForm() {
         <textarea
           id="message"
           name="message"
-          rows="6"
+          rows={6}
           value={formData.message}
           onChange={handleChange}
           aria-invalid={Boolean(errors.message)}
