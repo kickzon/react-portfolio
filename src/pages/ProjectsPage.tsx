@@ -9,9 +9,9 @@ const allTechnologies = [
 ].sort()
 
 function ProjectsPage() {
-  const [selectedTechnologies, setSelectedTechnologies] = useState([])
+  const [selectedTechnologies, setSelectedTechnologies] = useState<string[]>([])
 
-  function toggleTechnology(technology) {
+  function toggleTechnology(technology: string) {
     setSelectedTechnologies((currentTechnologies) =>
       currentTechnologies.includes(technology)
         ? currentTechnologies.filter((item) => item !== technology)
