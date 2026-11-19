@@ -1,4 +1,4 @@
-import styles from './About.module.css'
+import styles from "./About.module.css";
 
 function About() {
   return (
@@ -23,8 +23,8 @@ function About() {
         </p>
 
         <p>
-          Just nu utvecklar jag mina kunskaper inom React, TypeScript och
-          responsiv webbdesign. Mitt mål är att skapa genomtänkta digitala
+          Just nu utvecklar jag mina kunskaper inom React, Next.js, TypeScript
+          och responsiv webbdesign. Mitt mål är att skapa genomtänkta digitala
           upplevelser där design och funktion arbetar tillsammans.
         </p>
 
@@ -36,12 +36,18 @@ function About() {
           <li>JavaScript</li>
           <li>TypeScript</li>
           <li>React</li>
+          <li>Next.js</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>Mongoose</li>
+          <li>Supabase</li>
           <li>Git</li>
           <li>Figma</li>
         </ul>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;
